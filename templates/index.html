@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Recomendación</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Bienvenido al Sistema de Recomendación</h1>
+    <form action="/recommend" method="post">
+        <label for="user_input">Ingrese su consulta:</label>
+        <input type="text" id="user_input" name="user_input" required>
+        <button type="submit">Obtener Recomendaciones</button>
+    </form>
+    
+</body>
+</html>
